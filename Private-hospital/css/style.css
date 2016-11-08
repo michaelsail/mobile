@@ -1,0 +1,285 @@
+@charset "utf-8";
+/*================Reset styles start================*/
+html,body,article,header,nav,footer,section,aside,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,p,img,span,i,a,em,strong,b,cite,input,textarea,br,select { margin:0; padding:0; }
+i,em,h1,h2,h3,cite {font-weight:normal; font-style:normal; }
+body { font-family:"microsoft yahei",verdana,arial,\5b8b\4f53, tahoma,'Hiragino Sans GB',sans-serif; line-height: 1.85; font-size: 14px; background: #fff; word-break:break-all; }
+li { list-style:none; }
+a,img,input { border:0 none; }
+input,textarea{font-family:"microsoft yahei",verdana,arial,\5b8b\4f53, tahoma,'Hiragino Sans GB',sans-serif; font-size: 16px; -webkit-tap-highlight-color:rgba(0,0,0,0);}
+a { text-decoration:none; outline:none;-webkit-tap-highlight-color:rgba(0,0,0,0); }
+a:hover { text-decoration:none; }
+a:focus,input:focus { outline:0 none;}
+textarea { resize:none; font-size:14px; } /*去掉火狐和谷歌浏览器的Textarea改变尺寸大小功能*/
+input[type="text"],input[type="submit"],input[type="button"],textarea {-webkit-appearance: none;}
+.cursor{cursor: pointer;}
+button, input,textarea,select {line-height: normal; -webkit-appearance: none; border-radius:0;}
+
+input::-webkit-input-placeholder { color:#ccc;}
+input::-moz-input-placeholder { color:#ccc;}
+input::-ms-input-placeholder { color:#ccc;}
+input::-o-input-placeholder { color:#ccc;}
+.hide { display:none;}
+.fl { float:left;}
+.fr { float:right;}
+.clearfix:after { content:" "; display:block; clear:both; height:0; }
+.clearfix { zoom:1; }
+.cf{overflow: hidden;}
+.v-hidden{visibility: hidden;}
+
+.pr {position:relative;}
+.pa{position: absolute;}
+.pf{position: fixed;}
+.z-in99{z-index: 99;}
+.block{display: block;}
+.inblo{display:inline-block;}
+.tl{ text-align: left;}
+.tc{ text-align: center;}
+.tr{ text-align: right;}
+.ta{text-align: justify;}
+.marginauto{margin:0 auto;}
+
+.w{width:100%;}
+.w10{width: 10px;}
+.w44{width: 44px;}
+.w60{ width:60px;}
+.h{height:100%;}
+.h36{ height:36px;}
+.h44{ height: 44px;}
+.h60{height: 60px;}
+.h110{height: 110px;}
+
+.bs100{ background-size: 100% 100%;}
+.bsc{background-size: cover;}
+.bsct{background-size: contain;}
+.brno{background-repeat: no-repeat;}
+.bpc{background-position: center;}
+
+.fw7{font-weight: 700;}
+
+/*========定义通用样式========*/
+.pd5{ padding:5px;}
+.pd8{ padding:8px;}
+.pd10{ padding:10px;}
+.pd12{ padding:12px;}
+.pd15{ padding:15px;}
+.pd20{ padding:20px;}
+.pd30{ padding:30px;}
+.pl5{padding-left: 5px;}
+.pl10{padding-left: 10px;}
+.pl15{padding-left: 15px;}
+.pl20{padding-left: 20px;}
+.pl25{padding-left: 25px;}
+.pl30{padding-left: 30px;}
+.pr5{padding-right: 5px;}
+.pr10{padding-right: 10px;}
+.pr15{padding-right: 15px;}
+.pr20{padding-right: 20px;}
+.pr25{padding-right: 25px;}
+.pr30{padding-right: 30px;}
+.pt5{padding-top:5px;}
+.pt8{padding-top:8px;}
+.pt10{padding-top:10px;}
+.pt15{padding-top:15px;}
+.pt20{padding-top:20px;}
+.pt30{padding-top:30px;}
+.pb5{padding-bottom:5px;}
+.pb8{padding-bottom:8px;}
+.pb10{padding-bottom:10px;}
+.pb15{padding-bottom:15px;}
+.pb20{padding-bottom:20px;}
+.pb30{padding-bottom:30px;}
+.pb44{padding-bottom:44px;}
+.pagn{padding-left: 4.8%; padding-right: 4.8%; }
+.plr10{padding-left: 10%; padding-right: 10%; }
+.mt2{ margin-top:2px;}
+.mt5{ margin-top:5px;}
+.mt8{ margin-top:8px;}
+.mt10{ margin-top:10px;}
+.mt12{ margin-top:12px;}
+.mt14{ margin-top:14px;}
+.mt30{margin-top: 30px;}
+.mb5{margin-bottom: 5px;}
+.mb8{margin-bottom: 8px;}
+.mb10{margin-bottom: 10px;}
+.mb12{margin-bottom: 12px;}
+.ml5{margin-left: 5px;}
+.ml8{margin-left: 8px;}
+.ml10{margin-left: 10px;}
+.mr5{margin-right: 5px;}
+.mr8{margin-right: 8px;}
+.mr10{margin-right: 10px;}
+
+.fs10 { font-size:10px; }
+.fs12 { font-size:12px; }
+.fs13 { font-size:13px;}
+.fs14 { font-size:14px; }
+.fs15 { font-size:15px; }
+.fs16 { font-size:16px; }
+.fs18 { font-size:18px; }
+.fs20 { font-size:20px; }
+.fs22 { font-size:22px; }
+.fs24 { font-size:24px; }
+.fs26 { font-size:26px; }
+
+.lh16{line-height: 16px;}
+.lh18{line-height: 18px;}
+.lh20{line-height: 20px;}
+.lh22{line-height: 22px;}
+.lh24{line-height: 24px;}
+.lh44{line-height: 44px;}
+
+.ti5{text-indent: 5px;}
+.ti10{text-indent: 10px;}
+.td-lt{text-decoration: line-through;}
+
+.bgf{background: #fff;}
+.bgf1{background: #f1f1f1;}
+.bgf3{background: #f3f3f3;}
+.bgc{background: #ccc;}
+.bgf6{background: #f6f6f6;}
+.bgf5{background: #f5f5f5;}
+.bg00d{background: #00d3c2;}
+
+.cl33b{color: #33b2ef;}
+.clf37{color: #f37c18;}
+.cl00d{color: #00d3c2;}
+.clf0{color: #f00;}
+.cl0{color: #000;}
+.cl3{color: #333;}
+.cl6{color: #666;}
+.cl8{color: #888;}
+.cl9{color: #999;}
+.clb{color: #bbb;}
+.cld{color: #ddd;}
+.clf{color: #fff;}
+.nobor{border:none;}
+.bortf1{border-top: solid 1px #f1f1f1;}
+.borderf37{border:solid 1px #f37c18;}
+.boradius40{border-radius:40px;}
+
+
+.fixedbtn{bottom: 0;left: 0;}
+.fixedtop{top:0;left: 0}
+
+.topback{ position: absolute;left: 0px; top: 0px; width: 40px; height: 40px;}
+.maskbg,.popup,.mask{position: fixed;left: 0; top: 0; z-index: 99; width: 100%; height: 100%; background: rgba(0,0,0,.5);}
+
+.subbtit::before{content:'';display:inline-block;float:left;width:4px; height:16px; margin-right: 5px; margin-top: 8px; background: #3ec1fd;}
+/*超出显示省略号*/
+.overhide{text-overflow: ellipsis;overflow: hidden; white-space: nowrap; }
+header,nav,section,article,footer{ display:block;}
+
+/*header*/
+header{display:block;height:40px;padding:0;line-height:40px;color:#fff;background:#00D3C2;background: -webkit-gradient(linear, left top, left bottom, from(#1db5a4), to(#1cabbf));
+	background: -moz-linear-gradient(top right,  #1db5a4,  #1cabbf);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#1db5a4', endColorstr='#1cabbf');
+	background: -ms-linear-gradient(top right,#1db5a4, #1cabbf);
+}
+
+/*-----------------图标-----------------------*/
+@font-face {
+  font-family: 'iconfont';
+  src: url('//at.alicdn.com/t/font_1477469346_6613982.eot'); /* IE9*/
+  src: url('//at.alicdn.com/t/font_1477469346_6613982.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('//at.alicdn.com/t/font_1477469346_6613982.woff') format('woff'), /* chrome、firefox */
+  url('//at.alicdn.com/t/font_1477469346_6613982.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/font_1477469346_6613982.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+                                                                                                                                                                             
+.iconfont{
+    font-family:"iconfont" !important;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
+
+/*为什么选择我们*/
+.ly_box{}
+.ly_box li { float:left; width:48%; background: #fff; }
+.ly_box li:nth-child(2n){float: right;}
+.ly_box li a { display:block; height:44px; padding:10px 0px;  }
+.ly_box li span.btu {float:left;width:40px; height:44px;line-height:44px;margin:0;text-align:center;}
+.ly_box li span.btu img{width: 100%}
+.ly_box li .menur{margin-left:50px;margin-top:4px;line-height:18px;text-overflow: ellipsis;overflow: hidden; white-space: nowrap; color: #bbb;}
+.ly_box li h3 {font-weight:100; font-size:16px; color: #333;}
+.ly_box li em { font-style:normal; font-size:12px; color:#888;}
+
+/*背景竖线的菜单*/
+.subtit{width:76%;height:12px;margin:10px auto 20px auto; border-bottom: solid 1px #f1f1f1; text-align: center;}
+.subtit span{display:inline-block;margin:0 auto;padding:0 10px;line-height: 24px; font-size: 18px; color: #333; background: #fff;}
+
+.hosdoctor{ width: 100%; height: 42px; border-bottom: solid 1px #eee; background: #fff;}
+.hosdoctor li{ float: left; line-height: 41px; text-align: center; font-size: 16px; color: #333;}
+.hosdoctor li a{color: #333;}
+.hosdoctor .current span{ display: inline-block; border-bottom: solid 2px #00dac9; color: #00dac9;}
+.hosdoctor .current a span{color: #00dac9;}
+
+.inhospitalist{}
+.inhospitalist li{ width: 48%;margin:15px 0 10px 0 ;text-align: center;}
+.inhospitalist li a{ display: block;}
+.inhospitalist li p{position:absolute;bottom:0;left:0;float:left;display:block;width:100%;text-indent:10px;color:#fff; background:rgba(0,0,0,0.6);line-height:20px;text-overflow: ellipsis;overflow: hidden; white-space: nowrap;}
+.inhospitalist li span{line-height:18px;text-overflow: ellipsis;overflow: hidden; white-space: nowrap;}
+
+/*名医推荐*/
+.doctorlists{background: #f5f5f5;}
+.doctorlists li {float:left;width:90.4%;padding:0 4.8%;margin-top:12px;background:#fff;}
+.doctorlists li:first-child{margin-top: 0;}
+.doctorlists li a{display:block; float:left;padding:15px 0;}
+.doctorlimg {float:left; width:100px;  margin:0; }
+.doctorlists li a .rightinfo{  margin-left:110px; line-height: 20px; color: #999; overflow: hidden;}
+
+
+/*医院服务*/
+.unit-dlink-item {position: relative; margin: 10px auto; width: 130px; }
+.unit-dlink-icon {width: 40px; height: 40px; margin-right: 10px; line-height: 1.6; font-size: 22px; border-radius: 5px; }
+.unit-dlink-iorder {background-color: #61cd00;}
+.unit-dlink-itoday {background-color: #00c5e9;}
+.unit-dlink-icard {background-color: #ffc04f;}
+.unit-dlink-iuser {background-color: #3ec1fd;}
+.unit-dlink-ipay {background-color: #fe8850;}
+.unit-dlink-ireport {background-color: #438add;}
+.unit-dlink-inotice {background-color: #00caba;}
+.column-2 .column-grid {float: left; width: 50%; }
+
+/*机构详情图片*/
+.hospitalimg .swiper-slide{ height: 70px;}
+
+/*星星*/
+.cm-item-grade{font-size: 14px;}
+.cm-item-grade.grade_5 i{color: #ffcc36; }
+.cm-item-grade.grade_4 i:nth-child(5n+1), .cm-item-grade.grade_4 i:nth-child(5n+2), .cm-item-grade.grade_4 i:nth-child(5n+3), .cm-item-grade.grade_4 i:nth-child(5n+4){color: #ffcc36; }
+.cm-item-grade.grade_4 i:nth-child(5n){color: #e3e3e3; }
+.cm-item-grade.grade_3 i:nth-child(5n+1), .cm-item-grade.grade_3 i:nth-child(5n+2), .cm-item-grade.grade_3 i:nth-child(5n+3){color: #ffcc36; }
+.cm-item-grade.grade_3 i:nth-child(5n+4), .cm-item-grade.grade_3 i:nth-child(5n){color: #e3e3e3; }
+.cm-item-grade.grade_2 i:nth-child(5n+1), .cm-item-grade.grade_2 i:nth-child(5n+2){color: #ffcc36; }
+.cm-item-grade.grade_2 i:nth-child(5n+3), .cm-item-grade.grade_2 i:nth-child(5n+4), .cm-item-grade.grade_2 i:nth-child(5n){color: #e3e3e3; }
+.cm-item-grade.grade_1 i:nth-child(5n+1){color: #ffcc36; }
+.cm-item-grade.grade_1 i:nth-child(5n+2), .cm-item-grade.grade_1 i:nth-child(5n+3), .cm-item-grade.grade_1 i:nth-child(5n+4), .cm-item-grade.grade_1 i:nth-child(5n){color: #e3e3e3; }
+
+.hospitalinfo-h{height:66px;}
+
+.reviewi i{float:left;width: 25%; text-align: center;}
+.reviewi i:first-child{text-align: left;}
+.reviewi i:last-child{text-align: right;}
+
+#imgshow-box{position: fixed;top: 0;left: 0;z-index: 99999;}
+.pop-imageshow {
+        text-align: center;
+        font-size: 18px;
+        background-color:rgba(0,0,0,0.5);
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
